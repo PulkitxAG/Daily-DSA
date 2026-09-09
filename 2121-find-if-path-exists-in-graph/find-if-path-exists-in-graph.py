@@ -19,10 +19,10 @@ class Solution:
 
         while q:
             node = q.popleft()
+            if node == destination:
+                return True
             for x in graph.get(node, []):
                 if not visited[x]:
                     q.append(x)
                     visited[x] = 1
-            if visited[destination] == 1:
-                return True
         return False
