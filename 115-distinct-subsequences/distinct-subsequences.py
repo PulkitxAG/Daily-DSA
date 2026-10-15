@@ -1,5 +1,5 @@
 class Solution:
-    def numDistinct(self, s: str, t: str) -> int:
+    def numDistinct(self, s: str, t: str) -> int:        
         m = len(s)
         n = len(t)
         dp = [[0] * (n + 1) for _ in range(m + 1)]
